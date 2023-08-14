@@ -44,40 +44,35 @@
       <p class="copy"><img class="logo-editora" src="img/editora.png" alt="Logo Editora">Escrito e distribuído por Momo Editorrial</p>
     </div>
 
-    <form action="" method="post">
+    <form action="" method="post" id="resgateForm">
 
       <div class="form">
-
-        <div class="form-title">
-          <h4 id="titulo">Resgate o seu e-book gratuitamente!</h4>
-        </div>
-
-        <div class="labels">
-          <div class="form-nome">
-            <label for="nome" class="formbuilder-text-label"></label>
-            <input type="text" class="form-control" name="nome" access="false" id="nome" required="required" aria-required="true" placeholder="Nome completo *">
+        <form action="#" method="post" id="resgateForm">
+          <div class="form-title">
+            <h4 id="titulo">Resgate o seu e-book gratuitamente!</h4>
           </div>
-
-          <div class="form-email">
-            <label for="email" class="formbuilder-text-label"></label>
-            <input type="email" class="form-control" name="email" access="false" id="email" required="required" aria-required="true" placeholder="Email *">
+          <div class="labels">
+            <div class="form-nome">
+              <label for="nome" class="formbuilder-text-label"></label>
+              <input type="text" class="form-control" name="nome" access="false" id="nome" required="required" aria-required="true" placeholder="Nome completo *">
+            </div>
+            <div class="form-email">
+              <label for="email" class="formbuilder-text-label"></label>
+              <input type="email" class="form-control" name="email" access="false" id="email" required="required" aria-required="true" placeholder="Email *">
+            </div>
+            <div class="form-telefone">
+              <label for="telefone" class="formbuilder-text-label"></label>
+              <input type="tel" class="form-control" name="telefone" access="false" id="telefone" required="required" aria-required="true" placeholder="Telefone *">
+            </div>
+            <div class="form-button">
+              <a href="#" type="button" class="myButton" access="false" id="button">Resgate agora!</a>
+            </div>
+            <div id="mensagem" class="mensagem" style="display: none;">
+              Enviamos o ebook no seu email!
+            </div>
           </div>
-
-          <div class="form-telefone">
-            <label for="telefone" class="formbuilder-text-label"></label>
-            <input type="tel" class="form-control" name="telefone" access="false" id="telefone" required="required" aria-required="true" placeholder="Telefone *">
-          </div>
-
-        </div>
-
-        <div class="form-button">
-          <a href="#" type="button" class="myButton" access="false" id="button">Resgate agora!</a>
-        </div>
-
+        </form>
       </div>
-    </form>
-
-  </div>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -89,7 +84,6 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>

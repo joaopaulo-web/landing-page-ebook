@@ -50,6 +50,26 @@ p.copy{
   top: -10px;
 }
 
+.mensagem{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+  display: none; /* Inicialmente oculto */
+}
+
+div#mensagem{
+  position: relative;
+  top: 13px;
+  left: -700px;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+
 .logo-editora{
   width: 20px;
   padding-right: 10px;
@@ -72,14 +92,14 @@ p.copy{
 
 .titulos{
   position: relative;
-  left: 270px;
-  top: -172px;
+  left: 241px;
+  top: -182px;
 }
 
 .estrategias{
   position: relative;
-  left: -175px;
-  top: -54px;
+  left: -205px;
+  top: -64px;
 }
 
 .imagens{
@@ -90,11 +110,10 @@ p.copy{
 .labels{
   display: flex;
   flex-direction: column;
-  align-items: end;
-  justify-content: center;
+  align-items: center;
 }
 
-form{
+.form {
   position: relative;
   top: 166px;
   left: -698px;
@@ -103,7 +122,11 @@ form{
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  box-shadow: -5px 4px 15px -6px rgba(0,0,0,0.35);
+  box-shadow: -5px 4px 15px -6px rgba(0, 0, 0, 0.35);
+}
+
+.form.clicked {
+  background: transparent; /* Muda o background para transparent após o clique */
 }
 
 .form{
@@ -129,6 +152,11 @@ form{
 .form-button{
   margin: 3px 0;
   padding-bottom: 5px;
+}
+
+form#resgateForm{
+  left: -30px;
+  position: relative;
 }
 
 .myButton {
@@ -176,6 +204,8 @@ img.selo{
 }
 
 input{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
   background: #CCE2FF;
   border: none;
   padding: 9px 5px;
