@@ -1,21 +1,90 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Estilos Base
    ========================================================================== */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #b1c6e1;
+}
 
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
 }
+
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  width: 440px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 530px;
+}
+
+.container{
+  background: #cce2ff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 70vw;
+  height: 96vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.titulos{
+  position: relative;
+  left: 84px;
+  top: -148px;
+}
+
+.estrategias{
+  position: relative;
+  left: -361px;
+  top: -25px;
+}
+
+.imagens{
+  position: absolute;
+  right: -180px;
+}
+
+img.logo{
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+
+img.pontos{
+  width: 50px;
+}
+
+img.livro{
+  width: 750px;
+  position: relative;
+  left: -60px;
+}
+
+img.selo{
+  position: absolute;
+  left: 320px;
+  top: 20px;
+  width: 110px;
+}
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -185,79 +254,3 @@ textarea {
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
