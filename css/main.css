@@ -194,6 +194,35 @@ img.livro{
   width: 750px;
   position: relative;
   left: -60px;
+  animation: bookAnim 20s ease-in 0s infinite normal none;
+}
+
+@keyframes bookAnim {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
+  }
 }
 
 img.selo{
@@ -201,6 +230,7 @@ img.selo{
   left: 320px;
   top: 20px;
   width: 110px;
+  animation: bookAnim 20s ease-in 0s infinite normal none;
 }
 
 input{
@@ -211,6 +241,274 @@ input{
   padding: 9px 5px;
   border-radius: 4px;
   width: 295px;
+}
+
+/* ==========================================================================
+   Media Queries para o Design Responsivo.
+   ========================================================================== */
+
+@media only screen and (max-width: 1249px) {
+  .container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 70vw;
+    height: 96vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: -5px 4px 15px -6px rgba(0,0,0,0.35);
+  }
+  h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    width: 440px;
+  }
+  .titulos{
+    position: relative;
+    left: 295px;
+    top: -182px;
+  }
+  .estrategias{
+    position: relative;
+    left: -153px;
+    top: -64px;
+  }
+  form#resgateForm{
+    left: 20px;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  p.copy{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: 440px;
+    position: relative;
+    left: 178px;
+    top: -10px;
+  }
+}
+
+@media only screen and (max-width: 1085px) {
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vw;
+  }
+  .titulos{
+    left: 349px;
+    top: -188px;
+  }
+  .estrategias{
+    left: -101px;
+    top: -75px;
+  }
+  form#resgateForm{
+    left: 70px;
+    top: -20px;
+  }
+  img.livro{
+    left: -10px;
+  }
+  img.selo{
+    left: 375px;
+  }
+  p.copy{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    width: 440px;
+    position: relative;
+    left: 226px;
+    top: -30px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vw;
+  }
+  .titulos{
+    left: 339px;
+    top: -158px;
+  }
+  .form{
+    width: 410px;
+    height: 230px;
+  }
+  form#resgateForm{
+    left: 50px;
+    top: -29px;
+  }
+  h1{
+    font-size: 1.3rem;
+  }
+  h4{
+    margin: 9px 0 0 0;
+  }
+  .estrategias{
+    left: -109px;
+    top: -56px;
+  }
+  input{
+    width: 345px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  h3{
+    font-size: 0.9rem;
+  }
+  h4{
+    font-size: 0.9rem;
+    margin: 9px 0 0 42px;
+  }
+  .form{
+    width: 300px;
+  }
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vw;
+  }
+  .titulos{
+    left: 347px;
+  }
+  .estrategias{
+    left: -98px;
+  }
+  img.logo{
+    left: 18px;
+    top: 18px;
+  }
+  img.livro{
+    width: 600px;
+    left: -31px;
+    top: 1px;
+  }
+  img.selo{
+    left: 275px;
+    top: 2px;
+  }
+  img.pontos{
+    width: 42px;
+  }
+  p.copy{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.6rem;
+    width: 440px;
+    position: relative;
+    left: 154px;
+    top: -30px;
+  }
+  img.logo-editora{
+    width: 17px;
+    padding-right: 6px;
+  }
+  form#resgateForm{
+    left: 80px;
+    top: -37px;
+  }
+  input{
+    width: 265px;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  h1{
+    font-size: 0.9rem;
+  }
+  h3{
+    font-size: 0.7rem;
+  }
+  h4{
+    font-size: 0.7rem;
+    margin: 10px 0 0 -2px;
+    width: 136px;
+    text-align: center;
+  }
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vw;
+  }
+  .titulos{
+    left: 352px;
+    top: -178px;
+    text-align: center;
+  }
+  .estrategias{
+    left: 14px;
+    top: -101px;
+  }
+  .imagens{
+    position: absolute;
+    right: -200px;
+    top: 192px;
+  }
+  .form{
+    width: 170px;
+  }
+  form#resgateForm{
+    left: 140px;
+    top: -87px;
+  }
+  img.livro{
+    width: 360px;
+    left: -20px;
+    top: 1px;
+  }
+  img.selo{
+    left: 166px;
+    top: 20px;
+    width: 50px;
+  }
+  img.logo{
+    width: 160px;
+    left: 86px;
+    top: 15px;
+  }
+  img.pontos{
+    width: 32px;
+  }
+  p.copy{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    width: 440px;
+    position: relative;
+    left: -72px;
+    top: 46px;
+  }
+  input{
+    width: 135px;
+  }
+  ::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    width: 315px;
+    margin: 10px;
+  }
+  .myButton{
+    font-size: 7.8px;
+  }
 }
 
 /*
@@ -371,9 +669,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
